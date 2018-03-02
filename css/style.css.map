@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,mDAAmD;AAInD,qCAAqC;ACJrC,MAAO;EACN,MAAM,EAAE,IAAI;EACZ,gBAAgB,ECHJ,OAAO;;AFSpB,+BAA+B;AAI/B,aAAa",
+"sources": ["../scss/style.scss","../scss/layouts/header.scss","../scss/basic/variables.scss"],
+"names": [],
+"file": "style.css"
+}
