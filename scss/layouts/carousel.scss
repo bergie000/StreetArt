@@ -1,0 +1,28 @@
+
+section {
+	width: 100%;
+	background: $lightgrey;	
+}
+
+.carousel-item img {
+	height: 700px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 95px;
+  color: $strawberry;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 95px;
+  color: $strawberry;
+}

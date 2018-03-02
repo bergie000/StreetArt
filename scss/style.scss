@@ -5,6 +5,7 @@
 
 /* LAYOUTS - section layout styles */
 @import "layouts/header.scss";
+@import "layouts/carousel.scss";
 @import "layouts/footer.scss";
 
 /* MODULES - site components */
@@ -12,7 +13,7 @@
 @import "modules/typography.scss";
 
 /* VENDORS */
-
+@import "vendors/custom-bootstrap.scss";
 
 
 
