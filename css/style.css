@@ -1,10 +1,48 @@
 /* BASIC - mains styles, variables, mixins, etc. */
 /* LAYOUTS - section layout styles */
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 header {
-  height: 70px;
-  background-color: #b80c0c; }
+  width: 100%;
+  background-color: #b80c0c;
+  font-size: 16px; }
 
+.leftcontainer {
+  text-align: center; }
+
+#streetartlogo {
+  margin: 5px;
+  height: 140px; }
+
+.headerright {
+  float: right;
+  display: flex;
+  width: 200px;
+  flex-wrap: nowrap;
+  margin-top: 40px; }
+
+#profilepicture, .username {
+  height: 60px; }
+
+.username {
+  line-height: 60px;
+  margin-left: 12px; }
+
+/*media queries for small and large computer screens*/
+@media screen and (min-width: 769px) {
+  #header {
+    height: 150px; } }
+/*media queries for tablet*/
+@media screen and (max-width: 768px) {
+  #header {
+    height: 300px; }
+
+  .headerright {
+    float: none;
+    margin: 10px auto; } }
 /* MODULES - site components */
+body {
+  font-family: "Roboto", sans-serif; }
+
 /* VENDORS */
 
 /*# sourceMappingURL=style.css.map */
