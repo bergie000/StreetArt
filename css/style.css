@@ -3,8 +3,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 header {
   width: 100%;
-  background-color: #b80c0c;
-  font-size: 16px; }
+  background-color: #b80c0c; }
 
 .leftcontainer {
   text-align: center; }
@@ -25,7 +24,9 @@ header {
 
 .username {
   line-height: 60px;
-  margin-left: 12px; }
+  margin-left: 12px;
+  font-size: 18px;
+  color: #eaeaea; }
 
 /*media queries for small and large computer screens*/
 @media screen and (min-width: 769px) {
@@ -38,10 +39,14 @@ header {
 
   .headerright {
     float: none;
-    margin: 10px auto; } }
-section {
+    margin: 10px auto 20px auto; } }
+.carouselsection {
   width: 100%;
   background: #e0e0e0; }
+
+#Carousel {
+  margin-top: 5px;
+  margin-bottom: 5px; }
 
 .carousel-item img {
   height: 700px; }
@@ -60,6 +65,48 @@ section {
   content: '<';
   font-size: 95px;
   color: #b80c0c; }
+
+/*media queries for tablet*/
+@media screen and (max-width: 768px) {
+  .carousel-item img {
+    height: 500px; } }
+.howtouse {
+  width: 100%;
+  background: #b80c0c; }
+
+.howtouse h2 {
+  font-size: 35px;
+  width: 100%;
+  margin-top: 35px;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #eaeaea; }
+
+.howtosec {
+  text-align: center; }
+
+.howtouse .number {
+  font-size: 30px;
+  background: #e0e0e0;
+  height: 60px;
+  width: 60px;
+  margin: auto;
+  border-radius: 50%;
+  line-height: 60px; }
+
+.howtouse h4 {
+  font-size: 23px;
+  margin-top: 25px;
+  font-weight: bold;
+  color: #eaeaea; }
+
+.howtouse p {
+  font-size: 18px;
+  color: #eaeaea; }
+
+.newsstories {
+  width: 100%;
+  background: #b80c0c; }
 
 /* MODULES - site components */
 body {

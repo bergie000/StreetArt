@@ -2,7 +2,6 @@
 header {
 	width: 100%;
 	background-color: $strawberry;
-	font-size: 16px;
 }
 
 .leftcontainer {
@@ -29,6 +28,8 @@ header {
 .username {
 	line-height: 60px;
 	margin-left: 12px;
+	font-size: 18px;
+	color: $greytext;
 }
 
 
@@ -50,7 +51,7 @@ header {
 
 	.headerright {
 		float: none;
-		margin:	10px auto;
+		margin:	10px auto 20px auto;
 	}
 
 }
