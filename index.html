@@ -108,13 +108,13 @@
 					<article class = "newsstorydv">
 						<div class = "newsstoryimg" ID = "manface">
 							<div class = "imgopacity">
-								<button class = "sharestory btn btn-info" ID = "sharestory1" data-toggle="tooltip" data-placement="top" title="Share this article" data-delay='{"show":1000}'>Share</button>
+								<button class = "sharestory btn btn-info" ID = "sharestory1" data-toggle="modal" data-target="#sharestory1modal">Share</button>
 							</div>
 						</div>
 						<div class = "newsstorytext">
 							<h3>Cool Vista</h3>
 							<div>
-								<button class = "newslocation btn btn-primary" data-toggle="tooltip" data-placement="top" title="Location" data-delay='{"show":1000}'>New York, USA</button>
+								<button class = "newslocation btn btn-primary" data-toggle="tooltip" data-placement="top" title="Location" data-delay='{"show":1000}'>Berlin, Germany</button>
 								<button class = "hashtag btn btn-warning" data-toggle="tooltip" data-placement="top" title="Hashtags" data-delay='{"show":1000}'>#CoolVista</button>
 							</div>
 							<div class = "storybody">
@@ -127,13 +127,13 @@
 					<article class = "newsstorydv">
 						<div class = "newsstoryimg" ID = "manonbike">
 							<div class = "imgopacity">
-								<button class = "sharestory btn btn-info" ID = "sharestory2" data-toggle="tooltip" data-placement="top" title="Share this article" data-delay='{"show":1000}'>Share</button>
+								<button class = "sharestory btn btn-info" ID = "sharestory2">Share</button>
 							</div>
 						</div>
 						<div class = "newsstorytext">
 							<h3>Political Satire</h3>
 							<div>
-								<button class = "newslocation btn btn-primary" data-toggle="tooltip" data-placement="top" title="Location" data-delay='{"show":1000}'>Berlin, Germany</button>
+								<button class = "newslocation btn btn-primary" data-toggle="tooltip" data-placement="top" title="Location" data-delay='{"show":1000}'>New York, USA</button>
 								<button class = "hashtag btn btn-warning" data-toggle="tooltip" data-placement="top" title="Hashtags" data-delay='{"show":1000}'>#Politics</button>
 								<button class = "hashtag btn btn-warning" data-toggle="tooltip" data-placement="top" title="Hashtags" data-delay='{"show":1000}'>#GasPrices</button>
 							</div>
@@ -149,7 +149,7 @@
 					<article class = "newsstorydv">
 						<div class = "newsstoryimg" ID = "holeinwall">
 							<div class = "imgopacity">
-								<button class = "sharestory btn btn-info" ID = "sharestory3" data-toggle="tooltip" data-placement="top" title="Share this article" data-delay='{"show":1000}'>Share</button>
+								<button class = "sharestory btn btn-info" ID = "sharestory3">Share</button>
 							</div>
 						</div>
 						<div class = "newsstorytext">
@@ -168,7 +168,7 @@
 					<article class = "newsstorydv">
 						<div class = "newsstoryimg" ID = "kissingpeople">
 							<div class = "imgopacity">
-								<button class = "sharestory btn btn-info" ID = "sharestory4" data-toggle="tooltip" data-placement="top" title="Share this article" data-delay='{"show":1000}'>Share</button>
+								<button class = "sharestory btn btn-info" ID = "sharestory4">Share</button>
 							</div>
 						</div>
 						<div class = "newsstorytext">
@@ -195,13 +195,13 @@
 			</div>
 			<div class = "row">
 				<div class = "col-md-1"></div>
-				<div class = "col-md-6">
+				<div class = "col-md-6 no-gutter">
 					<div class = "uploadleft">
 						<h3>How To</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum arcu tellus, vel maximus felis ullamcorper quis. Aliquam velit justo, sagittis non eros vel, dapibus congue enim. In feugiat vestibulum quam. Ut accumsan quam ut vestibulum congue. Cras eleifend luctus nunc vitae congue. Phasellus urna odio, commodo id venenatis condimentum, malesuada non elit. Praesent at pharetra est.</p>
 					</div>
 				</div>
-				<div class = "col-md-4">
+				<div class = "col-md-4 no-gutter">
 					<div class = "uploadright">
 						<h4>Upload Here</h4>
 						<form method="post">
@@ -224,6 +224,38 @@
 			</div>
 		</div>
 	</section>
+	<footer>
+		<div class="container">
+			<div class = "row">
+				<div class = "col-md-1"></div>
+				<div class = "col-md-10">
+					<p>Copyright 2018 StreetArt Finder</p>
+				</div>
+				<div class = "col-md-1"></div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="modal fade" id="sharestory1modal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+    		<div class="modal-content">
+    			<div class="modal-header">
+    				<h5 class="modal-title">Share "Cool Vista"</h5>
+        			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        				<span aria-hidden="true">&times;</span>
+        			</button>
+      			</div>
+      			<div class="modal-body">
+      				<textarea class = "modaltextar">Found this in Berlin with StreetArt Finder!</textarea>
+    			</div>
+    			<div class="modal-footer">
+    				<button type="button" class = "socmedbut" data-toggle="tooltip" data-placement="bottom" title="Share on Facebook" data-delay='{"show":1000}'><img src="./images/website/facebook.png" class = "socmedimg"></button>
+    				<button type="button" class = "socmedbut" data-toggle="tooltip" data-placement="bottom" title="Share on Twitter" data-delay='{"show":1000}'><img src="./images/website/twitter.png" class = "socmedimg"></button>
+    				<button type="button" class = "socmedbut" data-toggle="tooltip" data-placement="bottom" title="Share on Instagram" data-delay='{"show":1000}'><img src="./images/website/instagram.png" class = "socmedimg"></button>
+    			</div>
+    		</div>
+		</div>
+	</div>
 
 
 

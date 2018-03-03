@@ -1,0 +1,50 @@
+
+.modal-content {
+	background: $lightgrey;
+}
+
+.modal-header {
+	border-bottom: none;
+}
+
+.modal-title {
+	margin-left: 20px;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.modal-footer {
+	border-top: none;
+	padding-top: 0;
+    padding-bottom: 30px;
+}
+
+.socmedbut {
+	background: transparent;
+	border: 0;
+}
+
+.socmedimg {
+	height: 40px;
+	width: 40px;
+	opacity: 0.75;
+	cursor: pointer;
+}
+
+.socmedimg:hover {
+	opacity: 1;
+}
+
+.modaltextar {
+	width: 93%;
+    padding: 10px 17px;
+    font-size: 24px;
+    margin-left: 5%;
+    height: 130px;
+    resize: none;
+    border-radius: 4px;
+}
+
+
+
