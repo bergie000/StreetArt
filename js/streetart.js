@@ -13,8 +13,15 @@ $(document).ready(function(){
 
 
 	$("#uploadphoto").change(function () {
-		$(".customiseduploadbut").text("Image Uploaded!");
+		var uploadphoto = $('#uploadphoto').val();
+		var backslash = uploadphoto.lastIndexOf("\\") + 1;
+		var length = uploadphoto.length;
+		var substr = uploadphoto.substring(backslash, length);
+		$(".customiseduploadbut").text(substr);
 	});
 
 
 });
+
+
+
