@@ -1,0 +1,56 @@
+
+.uploaddv {
+	width: 100%;
+	background: $lightgrey;	
+	padding-top: 20px;
+}
+
+.uploadh {
+	font-size: 35px;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.uploadleft {
+	width: 100%;
+	height: 350px;
+	margin-top: 75px;
+	background: $darkgrey;
+	border-radius: 4px;
+	margin-bottom: 10px;
+	color: #fff;
+	padding: 35px 25px 0 20px;
+}
+
+.uploadleft h3 {
+	font-size: 35px;
+	margin-top: 20px;
+}
+
+.uploadright {
+	width: 100%;
+	height: 500px;
+	background: #fff;
+	border-radius: 4px;
+	margin-bottom: 70px;
+	color: $darkgrey;
+}
+
+
+
+
+
+
+
+
+/*media queries for small and large computer screens*/
+@media screen and (min-width: 769px) {
+	.uploadleft {
+		margin-left: 50px;
+	}
+
+}
+
+
