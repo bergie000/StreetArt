@@ -1,3 +1,14 @@
+
+/* * Author: Lisa Bergin
+
+* Assignment: Minor Project - Web Application Build
+
+* Student ID: STU-00001445
+
+* Date: 2018/03/03 */
+
+@charset "UTF-8";
+
 /* BASIC - mains styles, variables, mixins, etc. */
 /* LAYOUTS - section layout styles */
 @import url("https://fonts.googleapis.com/css?family=Roboto");
@@ -57,6 +68,7 @@ header {
   width: 100px;
   background-image: none; }
 
+/*custom arrows*/
 .carousel-control-next-icon:after {
   content: '>';
   font-size: 95px;
@@ -75,14 +87,6 @@ header {
   width: 100%;
   background: #b80c0c; }
 
-.howtouse h2 {
-  font-size: 35px;
-  width: 100%;
-  margin-top: 35px;
-  margin-bottom: 40px;
-  text-align: center;
-  color: #eaeaea; }
-
 .howtosec {
   text-align: center; }
 
@@ -92,15 +96,23 @@ header {
   height: 60px;
   width: 60px;
   margin: auto;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
   border-radius: 50%;
   line-height: 60px; }
-
+.howtouse h2 {
+  font-size: 35px;
+  width: 100%;
+  margin-top: 35px;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #eaeaea; }
 .howtouse h4 {
   font-size: 23px;
   margin-top: 25px;
   font-weight: bold;
   color: #eaeaea; }
-
 .howtouse p {
   font-size: 18px;
   color: #eaeaea; }
@@ -115,6 +127,9 @@ header {
   height: 430px;
   margin: 0 auto 15px auto;
   background: #e0e0e0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
   border-radius: 4px; }
 
 .newsstoryimg {
@@ -157,6 +172,11 @@ header {
   padding: 15px 10px 0px 15px;
   height: 220px; }
 
+.newsstorytext h3 {
+  cursor: pointer; }
+.newsstorytext h3:hover {
+  text-decoration: underline; }
+
 .storybody {
   font-size: 14px;
   margin-top: 10px; }
@@ -182,6 +202,9 @@ header {
   height: 300px;
   margin-top: 75px;
   background: #555555;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
   border-radius: 4px;
   margin-bottom: 10px;
   color: #fff;
@@ -195,52 +218,53 @@ header {
   width: 100%;
   height: 450px;
   background: #fff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
   border-radius: 4px;
   margin-bottom: 70px;
   color: #555555; }
 
-.uploadright h4 {
-  height: 60px;
-  line-height: 60px;
-  font-size: 18px;
-  width: 100%;
-  text-align: center;
-  border-bottom: 1px solid #e0e0e0; }
-
-.uploadright form {
-  width: 80%;
-  margin-left: 10%;
-  margin-top: 25px; }
-
-.uploadright input[type="text"] {
-  width: 100%;
-  border-radius: 5px;
-  border: 1px solid lightgrey;
-  height: 35px; }
-
-.uploadright label {
-  font-size: 12px; }
-
-.uploadright input[type="file"] {
-  display: none; }
-
-.uploadright .seclabel {
-  margin-top: 20px; }
-
-.uploadright .customiseduploadbut {
-  border: 1px dashed #ccc;
-  display: inline-block;
-  padding: 19px 12px;
-  cursor: pointer;
-  height: 80px;
-  width: 90px;
-  text-align: center;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  word-wrap: break-word; }
-
-.uploadright .customiseduploadbut:hover {
-  text-decoration: underline; }
+.uploadright {
+  /*overwriting native image input with label*/ }
+  .uploadright h4 {
+    height: 60px;
+    line-height: 60px;
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0; }
+  .uploadright form {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 25px; }
+  .uploadright input[type="text"] {
+    width: 100%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    height: 35px; }
+  .uploadright label {
+    font-size: 12px; }
+  .uploadright .seclabel {
+    margin-top: 20px; }
+  .uploadright input[type="file"] {
+    display: none; }
+  .uploadright .customiseduploadbut {
+    border: 1px dashed #ccc;
+    display: inline-block;
+    padding: 19px 12px;
+    cursor: pointer;
+    height: 80px;
+    width: 90px;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    word-wrap: break-word; }
+  .uploadright .customiseduploadbut:hover {
+    text-decoration: underline; }
 
 .uploadgo {
   width: 100%; }
@@ -297,12 +321,13 @@ footer p {
   margin-left: 5%;
   height: 130px;
   resize: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
   border-radius: 4px; }
 
 /* MODULES - site components */
 body {
   font-family: "Roboto", sans-serif; }
-
-/* VENDORS */
 
 /*# sourceMappingURL=style.css.map */

@@ -1,3 +1,11 @@
+/* * Author: Lisa Bergin
+
+* Assignment: Minor Project – Web Application Build
+
+* Student ID: STU-00001445
+
+* Date: 2018/03/03 */
+
 
 /* BASIC - mains styles, variables, mixins, etc. */
 @import "basic/variables.scss";
@@ -13,11 +21,7 @@
 @import "layouts/modal.scss";
 
 /* MODULES - site components */
-@import "modules/buttons.scss";
 @import "modules/typography.scss";
-
-/* VENDORS */
-@import "vendors/custom-bootstrap.scss";
 
 
 

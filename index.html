@@ -3,6 +3,30 @@
 <html lang="zxx">
 
 <head>
+
+	<!--
+
+	* Author: Lisa Bergin
+
+	* Assignment: Minor Project – Web Application Build
+
+	* Student ID: STU-00001445
+
+	* Date: 2018/03/03
+
+
+	* Ref: 	https://getbootstrap.com/
+			https://jquery.com/
+			https://popper.js.org/
+
+	* GitHub Remote Repo: https://github.com/reeroo00/StreetArt
+
+	* Main Sass file: scss/style.scss
+
+	-->
+
+
+
 	<title>StreetArt Finder</title>
 
 	<meta charset="utf-8">
@@ -24,10 +48,10 @@
 	<header>
 		<div class="container">
 			<div class = "row">
-				<div class = "col-md-6 leftcontainer">
+				<div class = "col-md-6 leftcontainer"> <!-- logo -->
 					<img src="images/website/streetart-logo.png" alt = "StreetArt logo" class = "img-fluid" ID = "streetartlogo">
 				</div>
-				<div class = "col-md-6">
+				<div class = "col-md-6"> <!-- username and pic -->
 					<div class = "headerright" data-toggle="tooltip" data-placement="bottom" title="Edit Profile" data-delay='{"show":1000}'>
 						<img src="images/website/profilepic.jpg" alt = "Your Profile Picture" class = "rounded-circle" ID = "profilepicture">
 						<div class = "username">Username</div>
@@ -73,7 +97,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> <!-- end carousel section -->
 	<section class = "howtouse">
 		<div class="container">
 			<div class = "row">
@@ -100,14 +124,15 @@
 			</div>
 		</div>
 		<br>
-	</section>
+	</section> <!-- end how to use section -->
 	<section class = "newsstories">
 		<div class="container">
 			<div class = "row">
 				<div class = "col-md-6">
-					<article class = "newsstorydv">
+					<article class = "newsstorydv"> <!-- cool vista article -->
 						<div class = "newsstoryimg" ID = "manface">
 							<div class = "imgopacity">
+								<!-- share button for modal display -->
 								<button class = "sharestory btn btn-info" ID = "sharestory1" data-toggle="modal" data-target="#sharestory1modal">Share</button>
 							</div>
 						</div>
@@ -121,10 +146,10 @@
 								<p>Stu Unger is one of the biggest superstars to have emerged from the professional poker world. Besides being a true poker genius and a three time World Series of Poker champion, Stu Unger had a fascinating life story. It was not surprising that after his death Stu was the subject of a biography and a biopic. Stu Unger lived...</p>
 							</div>
 						</div>
-					</article>
+					</article> <!-- end cool vista article -->
 				</div>
 				<div class = "col-md-6">
-					<article class = "newsstorydv">
+					<article class = "newsstorydv"> <!-- political satire article -->
 						<div class = "newsstoryimg" ID = "manonbike">
 							<div class = "imgopacity">
 								<button class = "sharestory btn btn-info" ID = "sharestory2">Share</button>
@@ -141,12 +166,12 @@
 								<p>Gas prices are soaring! This has resulted in elevated travel expenses. If you travel by car, YOU have some control over the costs.<br><br>Here are some ways to save money on gas...</p>
 							</div>
 						</div>
-					</article>
+					</article> <!-- end political satire article -->
 				</div>
 			</div>
 			<div class = "row">
 				<div class = "col-md-6">
-					<article class = "newsstorydv">
+					<article class = "newsstorydv"> <!-- buenos aires bunny article -->
 						<div class = "newsstoryimg" ID = "holeinwall">
 							<div class = "imgopacity">
 								<button class = "sharestory btn btn-info" ID = "sharestory3">Share</button>
@@ -162,10 +187,10 @@
 								<p>It is not always possible to jet off half way around the world when you and your significant other are wishing to go off on a private and romantic getaway. The great news is that you don’t have to spend a lot of money or go very far to get away from everyone and everything. You can find cheap romantic vacations nearby, and you...</p>
 							</div>
 						</div>
-					</article>
+					</article> <!-- end buenos aires bunny article -->
 				</div>
 				<div class = "col-md-6">
-					<article class = "newsstorydv">
+					<article class = "newsstorydv"> <!-- madrid master article -->
 						<div class = "newsstoryimg" ID = "kissingpeople">
 							<div class = "imgopacity">
 								<button class = "sharestory btn btn-info" ID = "sharestory4">Share</button>
@@ -181,11 +206,11 @@
 								<p>“IT” (otherwise known as HD 36405.b) isn’t your average “oddball” exo-solar planet made of rock that wobbles on its end & zips around a nearby star in less than 2.46 days.<br><br>Seeking a spot of serenity somewhere in the universe, I...</p>
 							</div>
 						</div>
-					</article>
+					</article> <!-- end madrid master article -->
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> <!-- end new stories section -->
 	<section class = "uploaddv">
 		<div class="container">
 			<div class = "row">
@@ -213,8 +238,8 @@
 							<br>
 							<input name="hashtagname" ID="hashtagname" type="text">
 							<br>
-							<label for="uploadphoto" class="customiseduploadbut">Upload Image</label>
-							<input type="file" name="uploadphoto" ID="uploadphoto" accept="image/*">
+							<label for="uploadphoto" class="customiseduploadbut">Upload Image</label> <!-- replacement visual -->
+							<input type="file" name="uploadphoto" ID="uploadphoto" accept="image/*"> <!-- hidden -->
 							<br>
 							<button class = "uploadgo btn btn-info" ID= "uploadbutton">Upload</button>
 						</form>
@@ -223,7 +248,7 @@
 				<div class = "col-md-1"></div>
 			</div>
 		</div>
-	</section>
+	</section> <!-- end upload section -->
 	<footer>
 		<div class="container">
 			<div class = "row">
@@ -236,6 +261,7 @@
 		</div>
 	</footer>
 
+	<!-- hidden modal -->
 	<div class="modal fade" id="sharestory1modal" tabindex="-1" role="dialog" aria-hidden="true">
 		<div class="modal-dialog" role="document">
     		<div class="modal-content">
@@ -249,13 +275,13 @@
       				<textarea class = "modaltextar">Found this in Berlin with StreetArt Finder!</textarea>
     			</div>
     			<div class="modal-footer">
-    				<button type="button" class = "socmedbut" data-toggle="tooltip" data-placement="bottom" title="Share on Facebook" data-delay='{"show":1000}'><img src="./images/website/facebook.png" class = "socmedimg"></button>
-    				<button type="button" class = "socmedbut" data-toggle="tooltip" data-placement="bottom" title="Share on Twitter" data-delay='{"show":1000}'><img src="./images/website/twitter.png" class = "socmedimg"></button>
-    				<button type="button" class = "socmedbut" data-toggle="tooltip" data-placement="bottom" title="Share on Instagram" data-delay='{"show":1000}'><img src="./images/website/instagram.png" class = "socmedimg"></button>
+    				<button type="button" class = "socmedbut" data-toggle="tooltip" data-placement="bottom" title="Share on Facebook" data-delay='{"show":1000}'><img src="./images/website/facebook.png" class = "socmedimg" alt = "Share on Facebook"></button>
+    				<button type="button" class = "socmedbut" data-toggle="tooltip" data-placement="bottom" title="Share on Twitter" data-delay='{"show":1000}'><img src="./images/website/twitter.png" class = "socmedimg" alt = "Share on Twitter"></button>
+    				<button type="button" class = "socmedbut" data-toggle="tooltip" data-placement="bottom" title="Share on Instagram" data-delay='{"show":1000}'><img src="./images/website/instagram.png" class = "socmedimg" alt = "Share on Instagram"></button>
     			</div>
     		</div>
 		</div>
-	</div>
+	</div> <!-- end modal -->
 
 
 

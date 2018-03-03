@@ -1,4 +1,3 @@
-
 .newsstories {
 	width: 100%;
 	background: $strawberry;	
@@ -10,7 +9,7 @@
 	height: 430px;
 	margin: 0 auto 15px auto;
 	background: $lightgrey;
-	border-radius: 4px;
+	@include borderrad(4px);
 }
 
 .newsstoryimg {
@@ -59,6 +58,18 @@
 .newsstorytext {
 	padding: 15px 10px 0px 15px;
 	height: 220px;
+}
+
+.newsstorytext {
+
+	h3 {
+		cursor: pointer;
+	}
+
+	h3:hover {
+		text-decoration: underline;
+	}
+
 }
 
 .storybody {

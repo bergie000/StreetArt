@@ -1,43 +1,49 @@
-
 .howtouse {
 	width: 100%;
 	background: $strawberry;	
-}
-
-.howtouse h2 {
-	font-size: 35px;
-    width: 100%;
-    margin-top: 35px;
-    margin-bottom: 40px;
-	text-align: center;
-	color: $greytext;
 }
 
 .howtosec {
 	text-align: center;
 }
 
-.howtouse .number {
-	font-size: 30px;
-	background: $lightblue;
-	height: 60px;
-	width: 60px;
-	margin: auto;
-	border-radius: 50%;
-	line-height: 60px;
+.howtouse {
+
+	.number {
+		font-size: 30px;
+		background: $lightblue;
+		height: 60px;
+		width: 60px;
+		margin: auto;
+		@include borderrad(50%);
+		line-height: 60px;
+	}
+
+	h2 {
+		font-size: 35px;
+	    width: 100%;
+	    margin-top: 35px;
+	    margin-bottom: 40px;
+		text-align: center;
+		color: $greytext;
+	}
+
+	h4 {
+		font-size: 23px;
+	    margin-top: 25px;
+	    font-weight: bold;
+	    color: $greytext;
+	}
+
+	p {
+		font-size: 18px;
+		color: $greytext;
+	}
+
 }
 
-.howtouse h4 {
-	font-size: 23px;
-    margin-top: 25px;
-    font-weight: bold;
-    color: $greytext;
-}
 
-.howtouse p {
-	font-size: 18px;
-	color: $greytext;
-}
+
 
 
 
