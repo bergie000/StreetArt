@@ -12,4 +12,9 @@ $(document).ready(function(){
 	});
 
 
+	$("#uploadphoto").change(function () {
+		$(".customiseduploadbut").text("Image Uploaded!");
+	});
+
+
 });
